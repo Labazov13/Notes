@@ -13,15 +13,15 @@ def main():
             if change == 1:
                 database.export_all_data()
             else:
-                find_str = view.find_worker()
-                database.find_worker(find_str)
+                find_str = view.find_post()
+                database.find_post(find_str)
 
         if operation == 3:
             change = int(input("1-удаление\n2-изменение\n"))
             if change == 1:
                 change = int(input("1-удаление записи\n2-удаление всего журнала\n"))
                 if change == 1: 
-                    database.remove_worker()
+                    database.remove_post()
                 else:
                     database.delete_all_data()
             else:

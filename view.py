@@ -3,12 +3,11 @@ def get_op():
     return operation
 
 def get_data():
-    name = input("Введите имя: \n")
-    surname = input("Введите фамилию: \n")
-    phone = input("Введите телефон в формате +7 без пробелов: \n")
-    full_data= (surname + ' ' + name + ' ' + phone)+"\n"
+    name = input("Введите заголовок заметки: \n")
+    body = input("Введите тело заметки: \n")
+    full_data= (name + ' ' + body)+"\n"
     return full_data
 
-def find_worker():
-    data=input("Введите искомый параметр: ")
+def find_post():
+    data=int(input("Введите номер статьи (нумерация с 0): "))
     return data
